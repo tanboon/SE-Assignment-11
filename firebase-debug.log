@@ -1,0 +1,44 @@
+[debug] [2024-04-23T13:47:33.731Z] ----------------------------------------------------------------------
+[debug] [2024-04-23T13:47:33.732Z] Command:       /opt/homebrew/Cellar/node/21.6.2_1/bin/node /Users/tanboontiengtut/Documents/GitHub/SE-Assignment-11/node_modules/.bin/firebase emulators:start
+[debug] [2024-04-23T13:47:33.732Z] CLI Version:   13.7.3
+[debug] [2024-04-23T13:47:33.732Z] Platform:      darwin
+[debug] [2024-04-23T13:47:33.732Z] Node Version:  v21.6.2
+[debug] [2024-04-23T13:47:33.733Z] Time:          Tue Apr 23 2024 20:47:33 GMT+0700 (Indochina Time)
+[debug] [2024-04-23T13:47:33.733Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-23T13:47:33.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-23T13:47:33.776Z] > authorizing via signed-in user (tanboon.top3837@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-23T13:47:33.970Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-23T13:47:33.970Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-23T13:47:33.970Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":9999}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-23T13:47:33.973Z] [hub] writing locator at /var/folders/kf/1wc50x191rdbk8cvgnt0n1d80000gn/T/hub-se-assignment-11.json
+[debug] [2024-04-23T13:47:33.978Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/se-assignment-11/sites 
+[debug] [2024-04-23T13:47:34.907Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/se-assignment-11/sites 200
+[debug] [2024-04-23T13:47:34.907Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/se-assignment-11/sites {"sites":[{"name":"projects/se-assignment-11/sites/se-assignment-11","defaultUrl":"https://se-assignment-11.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-23T13:47:34.908Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/se-assignment-11/webApps/-/config [none]
+[debug] [2024-04-23T13:47:35.711Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/se-assignment-11/webApps/-/config 200
+[debug] [2024-04-23T13:47:35.711Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/se-assignment-11/webApps/-/config {"projectId":"se-assignment-11","storageBucket":"se-assignment-11.appspot.com","apiKey":"AIzaSyArX7BN5bW6ito_ICUY_74Q-5EbxlXCoRE","authDomain":"se-assignment-11.firebaseapp.com","messagingSenderId":"455344850846"}
+[debug] [2024-04-23T13:47:35.719Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/se-assignment-11 [none]
+[debug] [2024-04-23T13:47:36.146Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/se-assignment-11 200
+[debug] [2024-04-23T13:47:36.146Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/se-assignment-11 {"projectId":"se-assignment-11","projectNumber":"455344850846","displayName":"SE-Assignment-11","name":"projects/se-assignment-11","resources":{"hostingSite":"se-assignment-11"},"state":"ACTIVE","etag":"1_f5763703-a52d-465f-9f7c-dec6531cf4e8"}
+[info] i  hosting[se-assignment-11]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[se-assignment-11]: Local server: http://127.0.0.1:9999 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:9999\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:9999 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [23/Apr/2024:13:47:41 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:13:47:41 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Apr/2024:13:47:42 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:13:47:42 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15\""}}
